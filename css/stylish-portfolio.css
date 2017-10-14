@@ -1,0 +1,356 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Quicksand', sans-serif;
+    background-color:aliceblue;
+}
+
+.reenie {
+    font-family: 'Reenie Beanie', cursive;
+    color:white;
+}
+
+.text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text2 {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.text-vertical {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.text-vertical h1 {
+    margin:auto;
+    margin-bottom:300px;
+    font-size: 7em;
+    font-weight: 500;
+    background-color:gainsboro;
+    display:inline-block;
+    border-radius:5px;
+}
+
+.text-bottomindent {
+    padding-bottom:30px;
+}
+
+.text-leftindent {
+    margin-left:30px;
+}
+
+.nowrap ul li {
+    overflow:hidden;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border:2px solid black;
+    background:none;
+    color: black;
+    padding:12px 22px;
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 5px;
+    color: white;
+    background-color: gainsboro;
+    border:solid 2px gainsboro;
+    width:auto;
+    position:relative;
+    margin-top:-450px;
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,1);
+}
+
+#thanks {
+    font-family: 'Reenie Beanie', cursive;
+    text-align:center;
+    color:black;
+    font-size:80px;
+    font-weight:bold;
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 200px;
+    border-top: 0.5px solid black;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    transform: translateX(250px);
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+
+.header {
+    display:table;
+    position: relative;
+    background: url(../img/nzsnow.jpg) no-repeat center center scroll;
+    background-attachment: fixed;
+    overflow:scroll;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* About */
+
+.about {
+    margin:10px;
+}
+
+.about-text {
+    text-align:center;
+    height:auto;
+    margin-left:1%;
+    margin-right:1%;
+    line-height:30px;
+    overflow:auto;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Container */
+
+.container {
+    width:100%;
+}
+
+/* Callout */
+
+.callout {
+    width: auto;
+    display:inline;
+    height: 40px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding:0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.portfolio-item:hover{
+    opacity:0.8;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+    border-radius:5px;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Footer */
+
+footer {
+    padding: 70px;
+}
+
+#to-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+/* Resume Page */
+
+.resume_head {
+    font-size:90px;
+    width:100%;
+    height:auto;
+    font-weight:bold;
+    margin-bottom:5px;
+    margin-left:7px;
+    margin-top:10px;
+    overflow:auto;
+    z-index:100;
+}
+
+.dashed {
+    border-top: 2px dashed lightgrey;
+}
+
+hr {
+  border: 0;
+  border-top: 3px solid black;
+  border-bottom: 1px solid #fff;
+}
+
+#wrap {
+    min-height:100%;
+}
+
+#main {
+    overflow:auto;
+    padding-bottom:50px;
+}
+
+.footer {
+    position:relative;
+    margin-top:-50px;
+    height:50px;
+    clear:both
+    padding-top:20px;
+}
+
+/* Just for Fun Page */
+
+.fun-list li {
+    font-size:20px;
+    margin:10px 0;
+}
+
+.fun-img {
+    height:600px;
+    width:410px;
+    border-radius:5px;
+}

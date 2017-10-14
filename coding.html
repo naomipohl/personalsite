@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Naomi Pohl personal site">
+    <meta name="keywords" content="Naomi, Pohl">
+    <meta name="author" content="Naomi Pohl">
+
+    <title>naomi pohl | coding</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+<!-- Fonts/Gliphys -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Reenie+Beanie" rel="stylesheet">
+
+<!-- Favicon -->
+ <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a>naomi pohl</a>
+            </li>
+            <li>
+                <a href="index.html" onclick=$("#menu-close").click();>home</a>
+            </li>
+            <li>
+                <a href="projects.html" onclick=$("#menu-close").click();>creations</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>code</a>
+            </li>
+             <li>
+                <a href="https://naomipohlblog.wordpress.com/" target="_blank" onclick=$("#menu-close").click();>blog</a>
+            </li>
+            <li>
+                <a href="cv.html" onclick=$("#menu-close").click();>cv</a>
+            </li>
+             <li>
+                <a href="fun.html" onclick=$("#menu-close").click();>just for fun</a>
+            </li>
+            <li>
+                <a href="contact.html" onclick=$("#menu-close").click();>contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h1 style="text-align:center; color:black; font-size:80px" class="reenie">Coding</h1>
+                    <h3>page under construction- check back soon!</h3>
+                    </br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="mailto:naomi.pohl@yahoo.com"><i class="fa fa-envelope fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/naomipohl" target="_blank"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/naomipohl" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/nay.po/" target="_blank"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">&copy; Naomi Pohl 2017</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    </script>
+
+</body>
+</html>
