@@ -56,7 +56,7 @@ body {
 }
 
 .text-bottomindent {
-    padding-bottom:30px;
+    padding-bottom:100%;
 }
 
 .text-leftindent {
@@ -202,18 +202,40 @@ hr.small {
 
 /* Header */
 
-.header {
-    display:table;
-    position: relative;
-    background: url(../img/nzsnow.jpg) no-repeat center center scroll;
-    background-attachment: fixed;
-    overflow:scroll;
-    width: 100%;
-    height: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+@media only screen and (min-width: 1000px) {
+    .header{
+        display:table;
+        background: url(../img/nzsnow.jpg) no-repeat center center scroll;
+        overflow:scroll;
+        width: 65%;
+        margin:auto;
+        text-align:center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .header {
+        display:table;
+        background: url(../img/nzsnow.jpg) no-repeat center center scroll;
+        overflow:scroll;
+        width: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        max-width:100%;
+    }
+
+}
+/* ityped */
+
+.typing {
+    margin-top:-125px;
+    text-align:center;
 }
 
 /* About */
@@ -278,16 +300,6 @@ hr.small {
     border-radius:5px;
 }
 
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
-}
-
-.call-to-action .btn {
-    margin: 10px;
-}
-
 /* Footer */
 
 footer {
@@ -299,6 +311,10 @@ footer {
   position: fixed;
   bottom: 5px;
   right: 5px;
+}
+
+.list-item {
+    font-size:18px;
 }
 
 /* Resume Page */
@@ -323,6 +339,14 @@ hr {
   border: 0;
   border-top: 3px solid black;
   border-bottom: 1px solid #fff;
+}
+
+.hr2 {
+    color:black;
+    height:1px;
+    border-top:1px solid;
+    padding:0px;
+    width:40%;
 }
 
 #wrap {
@@ -353,4 +377,38 @@ hr {
     height:600px;
     width:410px;
     border-radius:5px;
+}
+
+
+/* Testimonial Page */
+
+.test-img {
+    height:550px;
+    width:425px;
+    border-radius:5px;
+}
+
+/* Coding Page */
+
+.code-text {
+    text-align:left;
+    padding:10px;
+}
+
+#ruby-circle {
+    width: 10px;
+    height: 10px;
+    background-color:red;
+    border-radius: 5px;
+}
+
+#jupyter-circle {
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.code {
+    background-color:white;
 }

@@ -5,16 +5,16 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <meta name="description" content="Naomi Pohl personal site">
     <meta name="keywords" content="Naomi, Pohl">
     <meta name="author" content="Naomi Pohl">
 
     <title>naomi pohl | coding</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet" type="text/css">
 
 <!-- Fonts/Gliphys -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -46,7 +46,7 @@
                 <a href="#top" onclick=$("#menu-close").click();>code</a>
             </li>
              <li>
-                <a href="https://naomipohlblog.wordpress.com/" target="_blank" onclick=$("#menu-close").click();>blog</a>
+                <a href="https://naomipohl.com/blog/" onclick=$("#menu-close").click();>blog</a>
             </li>
             <li>
                 <a href="cv.html" onclick=$("#menu-close").click();>cv</a>
@@ -60,13 +60,119 @@
         </ul>
     </nav>
 
-    <!-- Footer -->
-    <footer>
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h1 style="text-align:center; color:black; font-size:80px" class="reenie">Coding</h1>
-                    <h3>page under construction- check back soon!</h3>
+                    <h1 style="text-align:center; color:black; font-size:80px;" class="reenie">Coding</h1>
+
+                    <div class='well'>
+                        <div class='code-text'>
+                        <div style="width:15px;height:15px;background-color:red;border-radius:5px;"></div><h3 style="text-align:left;">Ruby</h3>
+                        </div>
+                        <hr class="small" style="padding:1px;">
+                        <h3 class="code-text">CRUD Blog built with Rails: <a href="https://rails-blog-naomipohl.herokuapp.com/", target="_blank">Heroku link</a> ,
+                        <a href="https://github.com/naomipohl/rails-blog-final", target="_blank">Github link</a></h3>
+                        <h4 class="code-text">22 Dec, 2017</h4>
+                        <h4 class="code-text">*The app might take ~15 seconds to load (the server goes to sleep after a few minutes of inactivity).* <br><br> 
+                        I FINALLY built a functional blog using Rails! This has been a big goal of mine since I started coding. Features include creating users, commenting, tagging, a search bar and a tag cloud. <br><br>
+                        <img class="img-portfolio img-responsive" src="img/blog.png" width=500 height=700>
+                        </h4>
+                    </div>
+
+                    <div class='well'>
+                        <div class='code-text'>
+                        <div style="width:15px;height:15px;background-color:red;border-radius:5px;"></div><h3 style="text-align:left;">Ruby</h3>
+                        </div>
+                        <hr class="small" style="padding:1px;">
+                        <h3 class="code-text">'Fakebook' (Facebook clone):
+                        <a href="https://github.com/naomipohl/facebook_app", target="_blank">Github link</a></h3>
+                        <h4 class="code-text">27 Dec, 2017</h4>
+                        <h4 class="code-text">Another Rails App built as an assignment for my Rails course at Penn. This app allows users to create profiles, post statuses, and send/receive friend requests. <br><br>
+                        </h4>
+                    </div>
+
+                        <div class='well'>
+                        <div class='code-text'>
+                        <div style="width:15px;height:15px;background-color:green;border-radius:5px;"></div><h3 style="text-align:left;">Python/Flask</h3>
+                        </div>
+                        <hr class="small" style="padding:1px;">
+                        <h3 class="code-text">Graph Property-Checker: <a href="https://math-340-project.herokuapp.com/", target="_blank">Heroku link</a></h3>
+                        <h4 class="code-text">28 Nov, 2017</h4>
+                        <h4 class="code-text">*The app might take ~15 seconds to load (the server goes to sleep after a few minutes of inactivity).* <br><br> 
+                        In my discrete math class this semester, instead of a second midterm we were assigned an open-ended project.<br> In class, we'd learned how to determine whether graphs have Euler paths/cycles and Hamiltonian circuits by hand, as well as how to tell whether a graph is bipartite. I wanted to learn how a computer would approach these problems, so a few classmates and I put together this Flask app. We used python for the back-end algorithms and javascript/HTML for the front-end jazz.<br> With our app, a user can draw a graph and click a button to find out whether the graph has certain properties. This was my first project with Flask, and yes, it really is as straightforward as they say it is!<br><br>
+                        <img class="img-portfolio img-responsive" src="img/graph_checker.png" width=500 height=700>
+                        </h4>
+                    </div>
+
+                    <div class='well'>
+                        <div class='code-text'>
+                        <div style="width:15px;height:15px;background-color:red;border-radius:5px;"></div><h3 style="text-align:left;">Ruby</h3>
+                        </div>
+                        <hr class="small" style="padding:1px;">
+                        <h3 class="code-text">Spotify Jukebox built with Rails: <a href="http://cis196-2017f-hw8-naomipohl.herokuapp.com/", target="_blank">Heroku link</a> ,
+                        <a href="https://github.com/naomipohl/spotify_app", target="_blank">Github link</a></h3>
+                        <h4 class="code-text">25 Oct, 2017</h4>
+                        <h4 class="code-text">A Rails App (deployed on Heroku!) built as an assignment for a Rails course at Penn. This app connects to Spotify's API and allows users to enter artists and songs to create a personalized 'jukebox'. Try it out! <br><br>
+                        <img class="img-portfolio img-responsive" src="img/jukebox.png">
+                        </h4>
+                    </div>
+
+                    <div class='well'>
+                        <div class='code-text'>
+                        <div style="width:15px;height:15px;background-color:orange;border-radius:5px;"></div><h3 style="text-align:left;">Jupyter Notebook</h3>
+                        </div>
+                        <hr class="small" style="padding:1px;">
+                        <h3 class="code-text">Data visualizations using Python Pandas: <a href="https://github.com/naomipohl/intro_dataviz/blob/master/data-viz.ipynb", target="_blank">Github link</a></h3>
+                        <h4 class="code-text">15 Oct, 2017</h4>
+                        <h4 class="code-text">Playing around with Jupyter Notebook and Pandas to create data visualizations, mostly using data about the city of Philadelphia. For example, finding the most dangerous hour of the day by analyzing data about police dispatches:<br><br>
+                        <img class="img-portfolio img-responsive" src="img/philly-crime-data.png">
+                        </h4>
+                    </div>
+
+                    <div class='well'>
+                        <div class='code-text'>
+                        <div style="width:15px;height:15px;background-color:red;border-radius:5px;"></div><h3 style="text-align:left;">Ruby</h3>
+                        </div>
+                        <hr class="small" style="padding:1px;">
+                        <h3 class="code-text">Bus-Finder App built with Rails: <a href="https://tranquil-tor-87745.herokuapp.com/", target="_blank">Heroku link</a> ,
+                        <a href="https://github.com/naomipohl/marta", target="_blank">Github link</a></h3>
+                        <h4 class="code-text">11 Aug, 2017</h4>
+                        <h4 class="code-text">A Rails App that plugs into Google Maps API and MARTA (Metropolitan Atlanta Rapid Transit Authority)'s API. The user can input their current location (in Atlanta only...) and the app returns the closest next bus.<br><br>
+                        <img class="img-portfolio img-responsive" src="img/marta.png">
+                        </h4>
+                    </div>
+
+                    <div class='well'>
+                        <div class='code-text'>
+                        <div style="width:15px;height:15px;background-color:red;border-radius:5px;"></div><h3 style="text-align:left;">Ruby</h3>
+                        </div>
+                        <hr class="small" style="padding:1px;">
+                        <h3 class="code-text">Some of my first-ever Ruby programs: <a href="https://github.com/naomipohl/rubyprojects", target="_blank">Github link</a></h3>
+                        <h4 class="code-text">10 July, 2017</h4>
+                        <h4 class="code-text">Mostly from my part-time summer coding class at Tech Talent South and self-teaching via '<a href="https://www.amazon.com/Learn-Program-Second-Facets-Ruby/dp/1934356360", target="_blank">Learn to Program</a>' by Chris Pine. Love that book. Including the 99 Bottles of Beer song!<tt><br><br>
+                            <div style="background-color:white;">
+                            <p style="text-align:left;padding:10px;">
+                            puts 'Let\'s sing a song!'<br>
+
+                            bottles = 99</br>
+                            while bottles != 0</br>
+                            puts bottles.to_s + ' bottles of beer on the wall, ' + bottles.to_s + ' bottles of beer!'</br>
+                            bottles = bottles-1</br>
+                            puts 'Take one down, and pass it around, ' + bottles.to_s + ' bottles of beer on the wall!'</br>
+                            end</br>
+                            </br>
+                            if bottles == 0</br>
+                            puts 'No bottles of beer left on the wall!'</br>
+                            end</br>
+                            </p>
+                            </div>
+                        </tt></h4>
+                    </div>
+                
+
+<!-- Footer -->
+    <footer>
                     </br>
                     <ul class="list-inline">
                         <li>
@@ -89,6 +195,9 @@
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
+</div>
+</div>
+</div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
