@@ -392,7 +392,26 @@ hr {
 
 .code-text {
     text-align:left;
-    padding:10px;
+}
+
+.code-text-li {
+    font-size:20px;
+}
+
+.coding-table {
+    border-collapse:collapse;
+    width:100%;
+}
+
+.coding-table td, th{
+    border: 1px solid #dddddd;
+    text-align:left;
+    padding:8px;
+    font-size:18px;
+}
+
+.coding-table tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
 #ruby-circle {
